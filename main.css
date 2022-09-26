@@ -1,0 +1,176 @@
+:root {
+  --primaryblue: #096CB9; 
+  --secondaryyellow: #FFBE00;
+  --thirdgreen: #3EA065;
+  --fourthgray: #DFDFDF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+
+body {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 33rem 33rem;
+  grid-template-rows: 5rem 30rem 10rem 20rem 5rem;
+  place-content: center;
+  place-items: center;
+  gap: 1.9rem;
+  grid-template-areas: 
+  "header header"
+  "hero hero"
+  "info info"
+  "bloc bloc"
+  "footer footer";   
+}
+
+/* Header Start */
+
+
+header {
+  grid-area: header;     
+}
+
+nav {
+  display: flex;
+  gap: 4rem;  
+}
+
+ul {
+  list-style: none; 
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid var(--primaryblue);
+  color: var(--primaryblue);
+  
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.homeimp {
+  border-bottom: 2px solid var(--primaryblue);
+  color: var(--primaryblue);  
+}
+
+
+/* Header End */
+
+img {
+  width: 3rem;
+  height: 3rem;
+
+}  
+
+/* Hero Start */
+.hero_section {
+  grid-area: hero;
+  
+}
+
+#hero-image {
+  position: relative;
+  width: 66rem;
+  height: 30rem; 
+
+}
+
+
+/* Hero End */
+
+/* Para Start */
+.text_section {
+  grid-area: info;
+  text-align: center;
+}
+
+.text_section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.text_section p {
+  font-size: 1.3rem;
+  color: rgb(128, 122, 122);
+}
+
+
+/* Para End */
+
+/* Three block Start */
+.three-blocks {
+  grid-area: bloc;
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+  color: white;
+  margin-top: 1.9rem;
+  
+}
+
+.three-blocks p {
+  font-size: 0.8rem;
+  padding: 20px;
+  
+}
+
+.three-blocks h2 {
+  padding-top: 20px;
+  
+}
+
+.thr-image {
+  width: 20.5rem;
+  height: 16.3rem;
+}
+.thr_blocks1 {
+  background-color: var(--primaryblue);
+}
+
+.thr_blocks2 {
+  background-color: var(--secondaryyellow);
+}
+
+.thr_blocks3 {
+  background-color: var(--thirdgreen);
+}
+
+/* Three blocks End */
+
+/* Footer Start */
+footer {
+  grid-area: footer; 
+  background-color: black;
+  text-align: center;
+  color: white;
+  width: 84rem;
+  height: 5rem;
+  padding-top: 30px;
+  margin-bottom: -10rem;
+}
+
+footer p {
+  font-size: 0.80rem;
+}
+/* Footer End */
